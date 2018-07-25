@@ -21,13 +21,14 @@ using namespace std;
 
 class linked_list
 {
-public:
+private:
     struct list
     {
         int info;
         struct list *next;
     };
     struct list *start=NULL;
+    public:
     void insertbeg(int item);
     void insertend(int item);
     void traverse();
